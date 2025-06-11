@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>필모아 행운의 룰렛!</title>
+    <!-- 넥슨 고딕 폰트 추가 -->
+    <link href="https://webfontworld.github.io/NexonGothic/NexonGothic.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 메인 컨테이너 -->
+    <div class="container">
+        <!-- 게임 제목 -->
+        <h1>필모아 행운의 룰렛!</h1>
+        <p class="subtitle">버튼을 눌러 행운을 가져가세요</p>
+
+        <!-- 룰렛 결과 표시 영역 -->
+        <div id="result" class="result"></div>
+
+        <!-- 룰렛 휠 컨테이너 -->
+        <div class="wheel-container">
+            <canvas id="wheel" width="400" height="400"></canvas>
+            <div class="pointer"></div>
+        </div>
+
+        <!-- 시작 버튼 -->
+        <button id="spinBtn" class="spin-button">시작</button>
+    </div>
+
+    <!-- 폭죽 효과를 위한 캔버스 -->
+    <canvas id="confetti"></canvas>
+
+    <!-- JavaScript 파일 연결 -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
